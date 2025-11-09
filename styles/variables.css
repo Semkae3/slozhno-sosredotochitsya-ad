@@ -1,4 +1,24 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-logo-color: rgba(219, 0, 255, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --nav-color: rgba(255, 0, 112, 1);
+  --nav-hover-color: rgba(255, 0, 112, 0.4);
+  --nav-color: rgba(255, 0, 112, 1);
+  --main-bg-color: rgba(0, 0, 40, 1);
+  --main-gap: 10px;
+  --cover-image-dark: url(../images/cover-image-dark.png);
+  --text-color: rgba(241, 178, 206, 1);
+  --title-color: rgba(255, 0, 112, 1);
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-logo-color: rgba(219, 0, 255, 1);
+  --rec-right: calc(var(--main-gap) + 28px)
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-gap: 20px;
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
